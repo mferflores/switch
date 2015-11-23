@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x;
+char y;
+cout << "Enter your average grade:" << endl;
+cin >> x;
+if (x >= 90)
+    y = 'a';
+else if (x >= 80)
+  y = 'b';
+else if (x>= 70)
+    y = 'c';
+else if (x>= 60)
+    y= 'd';
+else
+    y= 'f';
+
+switch (y) {
+    case 'a':
+        cout << "Awesome! You did really great, keep doing that." << endl;
+        break;
+    case 'b':
+        cout << "That's fine! You have an improvement chance, go for it!" << endl;
+        break;
+    case 'c':
+        cout << "You passed! That's good, you can do better tho" << endl;
+        break;
+    case 'd':
+            cout << "Oh no! you failed. But you can still get your grades up! " << endl;
+            break;
+    case 'f':
+      cout << "Your grades are really low, try harder! " << endl;
+           break;
+         }
+           return 0;
+
+    }
